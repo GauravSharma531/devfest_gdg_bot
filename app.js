@@ -1,6 +1,6 @@
 var restify = require('restify');
 var builder = require('botbuilder');
-var host = "https://c0d36ce9.ngrok.io/images/";
+var host = "https://gdgbot.azurewebsites.net/images/";
 
 
 if (process.env.DEV == 'DEV') {
