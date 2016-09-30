@@ -212,16 +212,18 @@ bot.dialog('/Schedule', [
             .attachments([
                 new builder.ThumbnailCard(session)
                 .title("Welcome Address")
+                .subtitle("10:00 - 10:30 AM")
                 .text("")
                 .images([
                     builder.CardImage.create(session, host + "google-1-1-180x180.png")
+
                 ]),
 
 
-
                 new builder.ThumbnailCard(session)
-                .title("Getting Started with Kubernetes")
-                .text("by Mr. Janakiram MSV, Analyst, Advisor & Architect at                               Janakiram & Associates ")
+                .title("Getting Started with Kubernetes")                
+                .subtitle("10:30 - 11:15 AM")
+                .text("by Mr. Janakiram MSV, Analyst, Advisor & Architect at Janakiram & Associates ")
                 .images([
                     builder.CardImage.create(session, host + "kubernetes-180x180.jpg")
                 ]),
@@ -230,13 +232,15 @@ bot.dialog('/Schedule', [
 
                 new builder.ThumbnailCard(session)
                 .title("India and VR - Challenges and Opportunities")
+                .subtitle("11:30 - 12:15 PM")
                 .text("by Mr. Jignesh Talasila, Founder & CEO, Loop Reality")
                 .images([
                     builder.CardImage.create(session, host + "vr-icon-180x180.png")
                 ]),
 
 
-                new builder.ThumbnailCard(session)
+                new builder.ThumbnailCard(session)                
+                .subtitle("12:15 - 01:00 PM")
                 .title("Firebase Overview")
                 .text("by Mr. Mustafa Ali, Director of Technology, Mutual Mobile")
                 .images([
@@ -252,7 +256,8 @@ bot.dialog('/Schedule', [
             .attachmentLayout(builder.AttachmentLayout.carousel)
             .attachments([
                 new builder.ThumbnailCard(session)
-                .title("Build Real-time Web App using Angular 2 & Firebase")
+                .title("Build Real-time Web App using Angular 2 & Firebase")            
+                .subtitle("01:30 - 02:30 PM")
                 .text("by Mr. Keerti Kotaru & Mr. Ravi Kiran, ng-Hyderabad")
                 .images([
                     builder.CardImage.create(session, host + "ng-fire-180x180.png")
@@ -261,7 +266,8 @@ bot.dialog('/Schedule', [
 
 
                 new builder.ThumbnailCard(session)
-                .title("Javascript & IoT (Internet of Things)")
+                .title("Javascript & IoT (Internet of Things)")                           
+                .subtitle("02:30 - 03:15 PM")
                 .text("by Mr. Arvind Ravulavaru, The IoT Suitcase")
                 .images([
                     builder.CardImage.create(session, host + "m2m-icon-336-300x300-180x180.png")
@@ -270,14 +276,16 @@ bot.dialog('/Schedule', [
 
 
                 new builder.ThumbnailCard(session)
-                .title("Introduction to LLVM Compiler Infrastructer")
+                .title("Introduction to LLVM Compiler Infrastructer")                          
+                .subtitle("03:15 - 04:00 PM")
                 .text("by Mr. Utpal Bora & Mr. Pratik Bhatu")
                 .images([
                     builder.CardImage.create(session, host + "unnamed-2-180x180.png")
                 ]),
 
 
-                new builder.ThumbnailCard(session)
+                new builder.ThumbnailCard(session)                          
+                .subtitle("04:15 - 05:15 PM")
                 .title("Getting started with Machine Learning")
                 .text("by Mr. Anudeep Sai, GDG Hyderabad")
                 .images([
@@ -293,7 +301,8 @@ bot.dialog('/Schedule', [
             .attachmentLayout(builder.AttachmentLayout.carousel)
             .attachments([
                 new builder.ThumbnailCard(session)
-                .title("Code Lab on BOTS - Future of Apps")
+                .title("Code Lab on BOTS - Future of Apps")                                        
+                .subtitle("01:30 - 02:30 PM")
                 .text("by Mr. Gaurav Sharma, Pramati Technologies")
                 .images([
                     builder.CardImage.create(session, host + "unnamed-1-180x180.png")
@@ -302,7 +311,8 @@ bot.dialog('/Schedule', [
 
 
                 new builder.ThumbnailCard(session)
-                .title("MVVM Architecture with Dagger 2 & Databinding")
+                .title("MVVM Architecture with Dagger 2 & Databinding")                                       
+                .subtitle("02:30 - 03:15 PM")
                 .text("by Mr. Tushar Acharya, Mutual Mobile")
                 .images([
                     builder.CardImage.create(session, host + "unnamed-180x180.png")
@@ -312,6 +322,7 @@ bot.dialog('/Schedule', [
 
                 new builder.ThumbnailCard(session)
                 .title("How ‘NOT-TO’ Develop Apps")
+                .subtitle("03:15 - 04:00 PM")
                 .text("by Mr. Surya & Mr. Kaushik, Primeauth")
                 .images([
                     builder.CardImage.create(session, host + "Primeauth-180x180.png")
@@ -320,6 +331,7 @@ bot.dialog('/Schedule', [
 
                 new builder.ThumbnailCard(session)
                 .title("Code Lab on RxAndroid")
+                .subtitle("04:15 - 05:15 PM")
                 .text("by Mr. Raviteja, Hug Innovations")
                 .images([
                     builder.CardImage.create(session, host + "RxAndroid-180x180.png")
