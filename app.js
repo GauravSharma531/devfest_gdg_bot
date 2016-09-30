@@ -32,6 +32,9 @@ if (process.env.DEV == 'DEV') {
     server.get(/\/images\/?.*/, restify.serveStatic({
         directory: './media'
     }));
+    server.get(/\/static\/?.*/, restify.serveStatic({
+        directory: './media'
+    }));
     ///=========================================================
     // Activity Events
     //=========================================================
